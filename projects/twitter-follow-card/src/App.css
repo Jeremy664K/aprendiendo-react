@@ -1,0 +1,61 @@
+.Follow {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    min-width: 25rem;
+}
+
+.Follor-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Follow-perfil {
+    max-width: 3rem;
+    border-radius: 2rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.Follow-user {
+    color: #777;
+}
+
+.Follow-you {
+    margin-left: 0.5rem;
+}
+
+.Follow-you.is-following {
+    color: #418556;
+}
+
+.Follow-you.is-notFollowing {
+    color: #854141;
+}
+
+.Follow-aside {
+    margin-left: 2rem;
+}
+
+.Follow-button {
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.12s;
+}
+
+.Follow-button.is-following {
+    background-color: #c74747;
+    color: #fff;
+}
+
+.Follow-button:hover {
+    opacity: 0.8;
+}
