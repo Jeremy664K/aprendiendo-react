@@ -8,9 +8,7 @@ export function TwitterFollowCard({ formatUserName, userName = "unknown", childr
     const buttonClassName = isFollowing ? "Follow-button is-following" : "Follow-button";
     const isFollowYouClassName = isFollowing ? "Follow-you is-following" : "Follow-you is-notFollowing";
 
-    const handleClick = () => {
-        setIsFollowing(!isFollowing);
-    };
+    const handleClick = () => setIsFollowing(!isFollowing);
 
     return (
         <article className="Follow">
