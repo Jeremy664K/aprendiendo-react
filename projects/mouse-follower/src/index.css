@@ -24,9 +24,14 @@ body {
     overflow: hidden;
 }
 
+body.no-cursor {
+    cursor: none;
+}
+
 .mouse {
     position: absolute;
-    background-color: #09f;
+    border: 0.125rem solid #fff;
+    background-color: #1a1a1a;
     border-radius: 50%;
     opacity: 0.8;
     pointer-events: none;

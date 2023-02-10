@@ -9,19 +9,20 @@ const FollowMouse = () => {
         setEnabled(!enabled);
     };
 
+    // Toggle cursor
     useEffect(() => {
-        const handleMove = (e) => {
-            const { clientX, clientY } = e;
-            setPosition({ x: clientX, y: clientY });
-        };
+        const handleMove = ({ clientX, clientY }) => setPosition({ x: clientX, y: clientY });
 
-        if (enabled) {
-            window.addEventListener("pointermove", handleMove);
-        }
+        if (enabled) window.addEventListener("pointermove", handleMove);
 
-        return () => {
-            window.removeEventListener("pointermove", handleMove);
-        };
+        return () => window.removeEventListener("pointermove", handleMove);
+    }, [enabled]);
+
+    // Toggle body cursor
+    useEffect(() => {
+        document.body.classList.toggle("no-cursor", enabled);
+
+        return () => document.body.classList.remove("no-cursor");
     }, [enabled]);
 
     return (
