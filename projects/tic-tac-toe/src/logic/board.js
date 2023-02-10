@@ -1,4 +1,4 @@
-import { WINNER_STACK } from "../constants";
+import { WINNER_STACK } from "./constants";
 
 export const checkWinner = (boardToCheck) => {
     for (const stack of WINNER_STACK) {

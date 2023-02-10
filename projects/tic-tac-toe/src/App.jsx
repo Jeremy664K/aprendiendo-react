@@ -4,7 +4,7 @@ import confetti from "canvas-confetti";
 import Square from "./components/Square";
 import WinnerModal from "./components/WinnerModal";
 
-import { TURNS } from "./constants";
+import { TURNS } from "./logic/constants";
 import { checkWinner, checkEndGame } from "./logic/board";
 
 export function App() {
