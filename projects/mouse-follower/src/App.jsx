@@ -5,9 +5,7 @@ const FollowMouse = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const textButtonEnabled = enabled ? "Desactivar puntero" : "Activar puntero";
 
-    const handleClick = () => {
-        setEnabled(!enabled);
-    };
+    const handleClick = () => setEnabled(!enabled);
 
     // Toggle cursor
     useEffect(() => {
