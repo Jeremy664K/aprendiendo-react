@@ -23,3 +23,4 @@ Curso de midudev para aprender **React** basado en proyectos. **[Todos los miér
 -   01: [Twitter Follow Card](projects/twitter-follow-card/)
 -   02: [Tic Tac Toe](projects/tic-tac-toe/)
 -   03: [Mouse Follower](projects/mouse-follower)
+-   04: [Prueba técnica de gatos](projects/prueba-tecnica/)
