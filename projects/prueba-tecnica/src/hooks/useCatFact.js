@@ -5,7 +5,12 @@ export function useCatFact() {
     const [fact, setFact] = useState();
 
     const refreshFact = () => getRandomFact().then(setFact);
-    useEffect(refreshFact, []);
+    useEffect(() => {
+        let isApiSubscribed = true;
+        if (isApiSubscribed) refreshFact();
+
+        return () => (isApiSubscribed = false);
+    }, []);
 
     return { fact, refreshFact };
 }

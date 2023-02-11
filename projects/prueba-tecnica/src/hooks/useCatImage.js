@@ -5,13 +5,19 @@ export function useCatImage({ fact }) {
     const [imageUrl, setImageUrl] = useState();
 
     const refreshImage = () => {
-        if (!fact) return;
+        let isApiSubscribed = true;
+        if (!fact || !isApiSubscribed) return;
 
         const firstWord = fact.split(" ")[0];
         getImageUrlFact(firstWord).then(setImageUrl);
+
+        return () => (isApiSubscribed = false);
     };
 
-    useEffect(refreshImage, [fact]);
+    useEffect(() => {
+        refreshImage();
+        return () => {};
+    }, [fact]);
 
     return { imageUrl, refreshImage };
 }
