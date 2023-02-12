@@ -1,0 +1,48 @@
+.Header,
+.Main {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.Header-Form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Movies-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+    position: relative;
+    overflow: hidden;
+    gap: 1.2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.Movies-item {
+    width: 100%;
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+    list-style: none;
+}
+
+.Movies-title {
+    max-width: 20ch;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.Movies-year,
+.Movies-title {
+    margin: 0;
+}
+
+.Movies-poster {
+    width: 100%;
+    height: auto;
+    max-height: 20rem;
+    border-radius: 6px;
+    object-fit: cover;
+}
