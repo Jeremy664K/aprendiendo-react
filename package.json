@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Jeremy664K/aprendiendo-react.git"
+        "url": "git+https://github.com/jevmydev/aprendiendo-react.git"
     },
     "keywords": [
         "React",
@@ -19,9 +19,9 @@
     "author": "Jeremy Díaz",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/Jeremy664K/aprendiendo-react/issues"
+        "url": "https://github.com/jevmydev/aprendiendo-react/issues"
     },
-    "homepage": "https://github.com/Jeremy664K/aprendiendo-react#readme",
+    "homepage": "https://github.com/jevmydev/aprendiendo-react#readme",
     "devDependencies": {
         "eslint": "8.33.0",
         "eslint-config-prettier": "8.6.0",
