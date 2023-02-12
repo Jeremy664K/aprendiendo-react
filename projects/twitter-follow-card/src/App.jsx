@@ -9,7 +9,7 @@ export function App() {
             <TwitterFollowCard formatUserName={format} userName="midudev">
                 Miguel Angel Durán
             </TwitterFollowCard>
-            <TwitterFollowCard formatUserName={format} userName="jeremy664k">
+            <TwitterFollowCard formatUserName={format} userName="jevmydev">
                 Jeremy Díaz
             </TwitterFollowCard>
             <TwitterFollowCard formatUserName={format} userName="manzDev">
