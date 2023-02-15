@@ -16,13 +16,13 @@ export function ListOfMovies({ movies }) {
     );
 }
 
-export function ErrorMovieResults() {
-    return <p>No se encontraron películas</p>;
+export function ErrorMovieResults({ isFirstRender }) {
+    return !isFirstRender && <p>No se encontraron películas</p>;
 }
 
-export function Movies({ movies }) {
+export function Movies({ movies, isFirstRender }) {
     const hasMovies = movies?.length > 0;
-    return <section className="Main-movies Movies">{hasMovies ? <ListOfMovies movies={movies} /> : <ErrorMovieResults />}</section>;
+    return <section className="Main-movies Movies">{hasMovies ? <ListOfMovies movies={movies} /> : <ErrorMovieResults isFirstRender={isFirstRender} />}</section>;
 }
 
 export default Movies;
