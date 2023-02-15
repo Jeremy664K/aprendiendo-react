@@ -21,6 +21,7 @@ export function App() {
     const debouncedGetMovies = useCallback(
         debounce(({ search }) => {
             getMovies({ search });
+            isFirstRender.current = false;
         }, 500),
         []
     );
