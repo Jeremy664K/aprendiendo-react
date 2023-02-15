@@ -6,6 +6,9 @@
         "lint": "eslint . --fix",
         "format": "prettier . --write"
     },
+    "workspaces": [
+        "projects/*"
+    ],
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jevmydev/aprendiendo-react.git"
