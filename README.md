@@ -14,7 +14,7 @@ Curso de midudev para aprender **React** basado en proyectos. **[Todos los miér
 
 -   01: [Introducción a React](https://www.twitch.tv/videos/1704282150?filter=archives&sort=time)
 -   02: [React Hooks: useState y useEffect](https://www.twitch.tv/videos/1711159530?filter=archives&sort=time)
--   03: [Fetching de datos y Custom Hooks](https://www.twitch.tv/videos/1718103492?filter=archives&sort=time)  
+-   03: [Fetching de datos y Custom Hooks](https://www.twitch.tv/videos/1718103492?filter=archives&sort=time)
 -   04: [Prueba técnica para Trainee](https://www.twitch.tv/videos/1718103492)
 -   05: [React Hooks: useRef, useMemo, useCallback](https://www.twitch.tv/videos/1732102325?filter=archives&sort=time)
 -   06: [React Hooks: useContext, useReducer, useId](https://www.twitch.tv/videos/1738955695)

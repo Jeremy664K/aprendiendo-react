@@ -2,7 +2,7 @@
 
 APIs:
 
-Las APIs no utilizan api keys.  
+Las APIs no utilizan api keys.
 
 -   Facts Random: https://catfact.ninja/fact
 -   Imagen random: https://cataas.com/cat/says/hello
