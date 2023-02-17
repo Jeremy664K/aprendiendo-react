@@ -10,7 +10,7 @@ export function Footer() {
     return (
         <footer className="Footer">
             <div className="Footer-wrapper">
-                {/* {JSON.stringify(filters, null, 2)} */}
+                {JSON.stringify(filters, null, 2)}
                 {JSON.stringify(cart, null, 2)}
             </div>
         </footer>
