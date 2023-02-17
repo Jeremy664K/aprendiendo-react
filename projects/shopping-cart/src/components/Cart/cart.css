@@ -1,0 +1,67 @@
+.Cart-list {
+    border-bottom: 0.0125rem solid #1a1a1a;
+    padding-bottom: 1rem;
+}
+
+.Cart-aside {
+    display: none;
+    background: #000;
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+    padding: 2rem;
+    width: 12.5rem;
+    border-radius: 2rem;
+}
+
+.Cart-menu {
+    background: #646cff;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.25rem;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    right: 0.5rem;
+    top: 0.5rem;
+    transition: transform 0.3s ease;
+    border-radius: 2rem;
+}
+
+.Cart-menu:hover {
+    transform: scale(1.1);
+}
+
+.Cart-menu,
+.Cart-section,
+.Cart-footer,
+.Cart-more {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.Cart-poster {
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.Cart-section,
+.Cart-footer {
+    justify-content: space-between;
+}
+
+.Cart-more {
+    font-size: 1.5rem;
+}
+
+.Cart-clear {
+    width: 100%;
+}
+
+.Cart-menu ~ .Cart-checkbox:checked ~ .Cart-aside {
+    display: block;
+}

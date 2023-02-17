@@ -1,0 +1,14 @@
+.Footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Footer-wrapper {
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #01010163;
+    backdrop-filter: blur(6rem);
+    position: fixed;
+    bottom: 2rem;
+}

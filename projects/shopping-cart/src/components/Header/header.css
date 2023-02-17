@@ -1,0 +1,21 @@
+.Header {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Header-h1 {
+    font-size: 3rem;
+    background-image: linear-gradient(to right, #646cff, #1f2aff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.Filters,
+.Filters-label {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}

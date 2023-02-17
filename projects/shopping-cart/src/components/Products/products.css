@@ -1,0 +1,28 @@
+.Products {
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+.Products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+    gap: 6rem;
+}
+
+.Products-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.Products-poster {
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.Products-purchase {
+    width: 100%;
+}
