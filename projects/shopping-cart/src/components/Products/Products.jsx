@@ -4,7 +4,7 @@ import { AddToCartIcon, RemoveFromCartIcon } from "../Icons/Icons";
 import "./products.css";
 
 export function Products({ products }) {
-    const { cart, addToCart, removeToCart, checkProductInCart } = useCart();
+    const { addToCart, removeToCart, checkProductInCart } = useCart();
 
     const handleClick = (product) => {
         const isProductInCart = checkProductInCart(product);
