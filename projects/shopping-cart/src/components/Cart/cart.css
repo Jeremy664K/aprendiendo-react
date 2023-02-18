@@ -1,17 +1,18 @@
-.Cart-list {
-    border-bottom: 0.0125rem solid #1a1a1a;
-    padding-bottom: 1rem;
-}
-
 .Cart-aside {
     display: none;
     background: #000;
     position: fixed;
+    overflow-y: auto;
+    height: 100vh;
     right: 0.5rem;
-    top: 0.5rem;
-    padding: 2rem;
+    top: 0;
+    padding: 0 2rem;
     width: 12.5rem;
-    border-radius: 2rem;
+}
+
+.Cart-item {
+    border-bottom: 0.0125rem solid #1a1a1a;
+    padding: 1rem 0;
 }
 
 .Cart-menu {
