@@ -12,10 +12,10 @@ module.exports = {
     },
     plugins: ["react"],
     rules: {
-        indent: ["error", 4],
+        indent: "off",
         "linebreak-style": "off",
-        quotes: ["error", "double"],
-        semi: ["error", "always"],
+        quotes: ["warn", "double"],
+        semi: ["warn", "always"],
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off"
     }
