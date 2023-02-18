@@ -26,3 +26,8 @@
 .Products-purchase {
     width: 100%;
 }
+
+.Products-purchase.remove {
+    outline: none;
+    border: 0.0125rem solid red;
+}

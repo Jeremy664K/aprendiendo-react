@@ -4,19 +4,18 @@ import { AddToCartIcon, RemoveFromCartIcon } from "../Icons/Icons";
 import "./products.css";
 
 export function Products({ products }) {
-    const { addToCart, removeToCart, checkProductInCart } = useCart();
+    const { addToCart, removeFromCart, checkProductInCart } = useCart();
 
-    const handleClick = (product) => {
-        const isProductInCart = checkProductInCart(product);
-        if (isProductInCart) return removeToCart(product);
-
-        addToCart(product);
-    };
+    const handleClick = (product, isProductInCart) => (isProductInCart ? removeFromCart(product) : addToCart(product));
 
     return (
         <section className="Products">
             <ul className="Products-list">
                 {products.map((product) => {
+                    const isProductInCart = checkProductInCart(product);
+                    const classNamePurchaseCart = `Products-purchase ${isProductInCart ? "remove" : "add"}`;
+                    const iconPurchaseCart = isProductInCart ? <RemoveFromCartIcon /> : <AddToCartIcon />;
+
                     return (
                         <li key={product.id}>
                             <article className="Products-item">
@@ -29,8 +28,8 @@ export function Products({ products }) {
                                         <strong className="Products-price">${product.price}</strong>
                                     </div>
                                     <div className="Products-wrapper">
-                                        <button className="Products-purchase" onClick={() => handleClick(product)}>
-                                            {checkProductInCart(product) ? <RemoveFromCartIcon /> : <AddToCartIcon />}
+                                        <button className={classNamePurchaseCart} onClick={() => handleClick(product, isProductInCart)}>
+                                            {iconPurchaseCart}
                                         </button>
                                     </div>
                                 </section>
