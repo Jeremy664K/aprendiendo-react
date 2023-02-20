@@ -27,3 +27,20 @@ Curso de midudev para aprender **React** basado en proyectos. **[Todos los miér
 -   03: [Mouse Follower](projects/mouse-follower)
 -   04: [Prueba técnica de gatos](projects/prueba-tecnica/)
 -   05: [Prueba técnica buscador de películas](projects/buscador-peliculas/)
+
+# Instalación y uso del monorepo 🎖️
+
+**¡Código abierto al mundo!**    
+
+- Puedes utilizar el producto realizando un `https://github.com/jevmydev/aprendiendo-react` en tu terminal.  
+- Luego ir a un proyecto del monorepo y emplear `npm run dev` en tu terminal para desplegar un entorno de desarrollo en la web.  
+
+También dispones de: 
+
+- `npm run build`: Empaquetar los módulos y construir un distribuible. 
+- `npm run preview`: Despliege de un entorno de preview del distribuible.  
+
+Solo en la raiz del monorepo:  
+
+- `npm run lint`: Ejecutar eslint y arreglar los errores en el código.   
+- `npm run format`: Ejecutar prettier y formatear el código.  
