@@ -18,7 +18,7 @@ Curso de midudev para aprender **React** basado en proyectos. **[Todos los miér
 -   04: [Prueba técnica para Trainee](https://www.twitch.tv/videos/1718103492)
 -   05: [React Hooks: useRef, useMemo, useCallback](https://www.twitch.tv/videos/1732102325?filter=archives&sort=time)
 -   06: [React Hooks: useContext, useReducer, useId](https://www.twitch.tv/videos/1738955695)
--   07: [Creando un React Router desde cero](https://www.twitch.tv/videos/1745844783)
+-   07: [React Router + Lazy Loading](https://www.twitch.tv/videos/1745844783)
 
 ## ⌨️ Proyectos
 
