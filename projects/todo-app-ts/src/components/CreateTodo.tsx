@@ -19,7 +19,7 @@ export const CreateTodo: React.FC<Props> = ({ saveTodo }) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input className="new-todo" type="text" value={inputValue} onChange={handleChange} placeholder="¿Qué quieres hacer?" autoFocus />;
+            <input className="new-todo" type="text" value={inputValue} onChange={handleChange} placeholder="¿Qué quieres hacer?" autoFocus />
         </form>
     );
 };
