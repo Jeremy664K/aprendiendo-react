@@ -1,29 +1,13 @@
 import { useState } from "react";
 
-import { type TodoId, type Todo as TodoTypes, FilterValue, TodoTitle } from "./types";
+import mocksTodos from "./mocks/mocksTodos.json";
+
+import { type TodoId, type Todo as TodoTypes, type FilterValue, type TodoTitle } from "./types";
 import { TODO_FILTERS } from "./const";
 
 import Header from "./components/Header";
 import Todos from "./components/Todos";
 import Footer from "./components/Footer";
-
-const mocksTodos = [
-    {
-        id: "1",
-        title: "Ver el twitch de midu",
-        completed: true
-    },
-    {
-        id: "2",
-        title: "Aprender React con TypeScript",
-        completed: false
-    },
-    {
-        id: "3",
-        title: "Sacar ticket de la midufest",
-        completed: false
-    }
-];
 
 const App = (): JSX.Element => {
     const [todos, setTodos] = useState(mocksTodos);
